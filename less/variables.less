@@ -22,8 +22,8 @@
 @jdrf-blue:         		#0073cf; // PMS 285
 @jdrf-blue-dark:        #002f5f; // PMS 295
 @jdrf-orange:         	#f0ad4e; // Used for Donate and other CTA contrast needs
-@jdrf-yellow:         	#f0ad4e; // Brand color for Walk to Cure Diabetes
-@jdrf-green:         		#f0ad4e; // Brand color for Ride to Cure Diabetes and Team JDRF
+@jdrf-yellow:         	#fdc82f; // Brand color for Walk to Cure Diabetes
+@jdrf-green:         		#0093ba; // Brand color for Ride to Cure Diabetes and Team JDRF
 
 // Scaffolding
 // -------------------------
@@ -44,32 +44,38 @@
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          16px;
+@font-size-base:          14px;
+@font-size-large:         ceil(@font-size-base * 1.25); // ~18px
+@font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
 @line-height-base:        1.5;
 
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+
 @headings-font-family:    @font-family-base;
 @headings-font-weight:    400;
-@headings-line-height:    1.25;
+@headings-line-height:    1.1;
 
 
 // Components
 // -------------------------
-// Based on 16px font-size and 1.5 line-height (~24px to start)
+// Based on 14px font-size and 1.428 line-height (~20px to start)
 
-@padding-base-vertical:          16px;
-@padding-base-horizontal:        15px;
+@padding-base-vertical:          8px;
+@padding-base-horizontal:        12px;
 
-@padding-large-vertical:         24px;
-@padding-large-horizontal:       30px;
+@padding-large-vertical:         14px;
+@padding-large-horizontal:       16px;
 
-@padding-small-vertical:         8px;
+@padding-small-vertical:         5px;
 @padding-small-horizontal:       10px;
 
-@border-radius-base:             3px;
+@border-radius-base:             4px;
 @border-radius-large:            6px;
+@border-radius-small:            3px;
 
-@component-active-bg:            @brand-primary;
+@component-active-bg:            @jdrf-blue;
 
 
 // Type
