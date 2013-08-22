@@ -496,6 +496,12 @@ hr {
 p {
   margin: 0 0 10px;
 }
+@media (min-width: 480px) {
+  p {
+    font-size: 16px;
+    margin: 0 0 12px;
+  }
+}
 .lead {
   margin-bottom: 20px;
   font-size: 16.099999999999998px;
@@ -553,7 +559,7 @@ h6,
 .h5,
 .h6 {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.1;
 }
 h1 small,
