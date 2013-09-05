@@ -2983,7 +2983,7 @@ a .icon-flip-vertical:before {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #fff;
-  padding: 32px;
+  padding: 16px;
   border-radius: 3px;
   border: #eeeeee solid 1px;
 }
@@ -2991,6 +2991,11 @@ a .icon-flip-vertical:before {
   .content__main {
     float: left;
     width: 58.333333333333336%;
+  }
+}
+@media (min-width: 768px) {
+  .content__main {
+    padding: 32px;
   }
 }
 .content__sidebar {

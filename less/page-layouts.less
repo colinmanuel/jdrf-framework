@@ -44,9 +44,13 @@
 .content__main {
 	.make-sm-column(7);
 	background-color: #fff;
-	padding: (@padding-large-horizontal * 2);
+	padding: @padding-large-horizontal;
 	border-radius: @border-radius-small;
 	border: @gray-lighter solid 1px;
+
+	@media (min-width: @screen-sm) {
+		padding: (@padding-large-horizontal * 2);
+	}
 }
 
 .content__sidebar {
