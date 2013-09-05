@@ -1,1 +1,1 @@
-$(document).ready(function(){$("[data-toggle=offcanvas]").click(function(){$("html").toggleClass("offcanvas-active")})});
+(function(e){e(document).ready(function(){e("[data-toggle=offcanvas]").click(function(){e("html").toggleClass("offcanvas-active")})})})(jQuery);
