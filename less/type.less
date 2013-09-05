@@ -9,9 +9,10 @@
 p {
   margin: 0 0 (@line-height-computed / 2);
 
-		@media (min-width: @screen-tiny) {
+		@media (min-width: @screen-sm) {
     	font-size: @font-size-medium;
-    	margin: 0 0 (@line-height-medium-computed / 2);
+    	line-height: @line-height-medium;
+    	margin: 0 0 (@line-height-medium-computed);
 		}
 		
 }
@@ -57,8 +58,8 @@ cite    { font-style: normal; }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: @headings-font-family;
-  font-weight: @headings-font-weight;
   line-height: @headings-line-height;
+  color: @blue-dark;
   small {
     font-weight: normal;
     line-height: 1;
@@ -66,11 +67,12 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-h1,
-h2,
-h3 {
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  font-weight: 200;
   margin-top: @line-height-computed;
-  margin-bottom: (@line-height-computed / 2);
+  margin-bottom: @line-height-computed;
 }
 h4,
 h5,
