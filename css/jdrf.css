@@ -3010,18 +3010,6 @@ a .icon-flip-vertical:before {
     margin-left: 8.333333333333332%;
   }
 }
-.participant-badge__story--team-jdrf:before {
-  content: url(http://www2.jdrf.org/tjdrf/images/badges/Challenge.jpg);
-  position: absolute;
-  left: 15px;
-}
-.participant-badge {
-  padding: 10px 0 10px 64px;
-  border-bottom: #eeeeee solid 1px;
-}
-.participant-badge p {
-  font-size: 14px;
-}
 table {
   max-width: 100%;
   background-color: transparent;
@@ -5192,16 +5180,72 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .site-menu {
   z-index: 200;
   position: absolute;
-  overflow: hidden;
   width: 275px;
   left: -275px;
   top: 0;
   height: 100%;
+  overflow: auto;
   color: #fff;
   background-color: #002f5f;
 }
 .offcanvas-active .page {
   left: 275px;
+}
+.site-menu .collapse {
+  height: 100%;
+}
+.site-menu .icon-remove {
+  display: block;
+  padding: 10px 12px;
+  font-size: 27px;
+  cursor: pointer;
+}
+.site-menu .icon-remove:hover,
+.site-menu .icon-remove:focus {
+  color: #0073cf;
+  text-decoration: none;
+}
+.site-menu__list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.site-menu__list--item {
+  position: relative;
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: -1px;
+  border-bottom: #002246 solid 1px;
+}
+.site-menu__list--item:hover,
+.site-menu__list--item:focus {
+  background-color: #0073cf;
+  cursor: pointer;
+}
+.site-menu__list--item:hover:after {
+  font-family: 'FontAwesome';
+  content: "\f105";
+  position: absolute;
+  right: 15px;
+}
+.site-menu__list--item.more:hover:after {
+  font-family: 'FontAwesome';
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+}
+.site-menu__list--item a {
+  color: #fff;
+}
+.site-menu__list--item a:hover,
+.site-menu__list--item a:focus {
+  text-decoration: none;
+}
+.site-menu__list--section-title {
+  background-color: #002246;
+  padding: 5px 12px;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .breadcrumb {
   margin-left: -15px;
@@ -5502,6 +5546,18 @@ a.list-group-item.active > .badge,
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
+}
+.participant-badge__story--team-jdrf:before {
+  content: url(http://www2.jdrf.org/tjdrf/images/badges/Challenge.jpg);
+  position: absolute;
+  left: 15px;
+}
+.participant-badge {
+  padding: 10px 0 10px 64px;
+  border-bottom: #eeeeee solid 1px;
+}
+.participant-badge p {
+  font-size: 14px;
 }
 .jumbotron {
   padding: 30px;
