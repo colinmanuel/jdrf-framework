@@ -38,21 +38,26 @@
 }
 
 .site-menu__list--item {
-	position: relative;
-  display: block;
-  padding: @padding-large-vertical @padding-base-horizontal;
   margin-bottom: -1px;
   border-bottom: (darken(@blue-dark, 5%)) solid 1px;
   
-  &:hover,
-  &:focus {
-	  background-color: @blue;
-	  cursor: pointer;
-  }
-  
 }
 
-.site-menu__list--item:hover:after {
+.site-menu__list--item a {
+	position: relative;
+	color: #fff;
+	display: block;
+  padding: @padding-large-vertical @padding-base-horizontal;
+	
+	&:hover,
+  &:focus {
+	  text-decoration: none;
+	  background-color: @blue;
+  }
+	
+}
+
+.site-menu__list--item a:hover:after {
 	font-family: 'FontAwesome';
 	content: @angle-right;
 	position: absolute;
@@ -60,21 +65,11 @@
 	
 }
 
-.site-menu__list--item.more:hover:after {
+.site-menu__list--item.more a:hover:after {
 	font-family: 'FontAwesome';
 	content: @angle-down;
 	position: absolute;
 	right: 15px;
-	
-}
-
-.site-menu__list--item a {
-	color: #fff;
-	
-	&:hover,
-  &:focus {
-	  text-decoration: none;
-  }
 	
 }
 

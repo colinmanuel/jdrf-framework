@@ -1,1 +1,1 @@
-(function(e){e(document).ready(function(){e("[data-toggle=offcanvas]").click(function(){e("html").toggleClass("offcanvas-active")})})})(jQuery);
+(function(e){function n(){t.width()>=768&&e("#more").addClass("in")}e(document).ready(function(){e("[data-toggle=offcanvas]").click(function(){e("html").toggleClass("offcanvas-active")})});var t=e(window);n();e(window).resize(n)})(jQuery);
