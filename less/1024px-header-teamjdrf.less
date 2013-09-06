@@ -1,0 +1,167 @@
+.site-header {
+	position: relative;
+	height: 64px;
+  background-color: #fff;
+	border-bottom: @gray-lighter solid 2px;
+  .clearfix();
+}
+
+.logo--team-jdrf {
+	position: absolute;
+	display: block;
+	width: 148px;
+	height: 18px;
+	margin-top: 0;
+	background: url("../images/logo-teamjdrf.svg") no-repeat;
+	left: 80px;
+	margin-top: 23px;
+	.hide-text;
+}
+
+.no-svg .logo--team-jdrf {
+	background: url("../images/logo-teamjdrf.png") no-repeat;
+}
+
+.site-menu__toggle {
+	position: absolute;
+	display: block;
+	height: 64px;
+  top: 0px;
+  left: 0px;
+  padding: 21px 20px 0 20px;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 0;
+	border-right: @gray-lighter solid 1px;
+	cursor: pointer;
+	.transition(all .5s ease-in);
+	
+	&:hover,
+  &:focus {
+  	color: #fff;
+    background-color: @blue;
+    text-decoration: none;
+  }
+}
+
+.offcanvas-active .site-menu__toggle {
+	color: #fff;
+  background-color: @blue;
+  text-decoration: none;
+}
+
+.site-header__container {
+  width: 1024px;
+}
+
+.site-header__row {
+
+}
+
+.site-header__logo {
+}
+
+.site-header__links {
+  font-size: @font-size-medium;
+  padding-left: 45px;
+  width: 1024px;
+  position: relative;
+}
+
+.site-header__links--left {
+  position: absolute;
+  margin-top: 21px;
+  left: 258px;
+}
+
+.site-header__links--left a {
+  position: relative;
+  padding: 22px 5px;
+  margin-right: 15px;
+  color: @gray;
+  -webkit-transition: color 0.3s;
+  	 -moz-transition: color 0.3s;
+  	      transition: color 0.3s;
+}
+
+
+.site-header__links--left a::after {	
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: @blue;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.site-header__links--left a::after {
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.site-header__links--left a:hover,
+.site-header__links--left a:focus {
+  text-decoration: none;
+  color: @blue;
+}
+
+.site-header__links--left a:hover::after,
+.site-header__links--left a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}	
+
+.site-header__links--right {
+  position: absolute;
+  right: 0;
+  margin-top: 13px;
+}
+
+.site-header__links--right .donate {
+  .btn;
+  font-size: @font-size-medium;
+  border: @blue solid 1px;
+  border-radius: @border-radius-base;
+  padding: padding-base-vertical padding-base-horizontal;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  	 -moz-transition: all 0.5s;
+  	 			transition: all 0.5s;
+}
+
+.site-header__links--right .donate:hover,
+.site-header__links--right .donate:active {
+  background-color: @blue;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header__links--right .login {
+  margin-left: 15px;
+  color: @green;
+  .transition (all .5s ease);
+}
+
+.site-header__links--right .login::after {
+  font-family: 'FontAwesome';
+  content: @signin;
+  padding-left: 8px;
+}
+
+.site-header__links--right .login:hover,
+.site-header__links--right .login:focus,
+.site-header__links--right .login:active {
+  text-decoration: none;
+  color: darken(@green, 20%);	
+}
