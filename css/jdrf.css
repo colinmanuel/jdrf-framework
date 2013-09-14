@@ -1,4 +1,4 @@
-/*!
+/*
  * JDRF Framework
  * A customized Bootstrap by @pmmck
  * 
@@ -459,7 +459,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -479,7 +479,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #003a69;
+  color: #00579c;
   text-decoration: underline;
 }
 a:focus {
@@ -544,12 +544,13 @@ p {
 .lead {
   margin-bottom: 20px;
   font-size: 16.099999999999998px;
-  font-weight: 200;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
+    font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+    font-weight: 300;
   }
 }
 small {
@@ -597,8 +598,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #002f5f;
 }
 h1 small,
@@ -613,7 +613,7 @@ h6 small,
 .h4 small,
 .h5 small,
 .h6 small {
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1;
   color: #999999;
 }
@@ -623,15 +623,30 @@ h2,
 .h2,
 h3,
 .h3 {
-  font-weight: 200;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Gotham SSm 7r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.lt-ie9 h4,
+.lt-ie9 .h4,
+.lt-ie9 h5,
+.lt-ie9 .h5,
+.lt-ie9 h6,
+.lt-ie9 .h6 {
+  font-weight: normal !important;
+  font-style: normal !important;
 }
 h1,
 .h1 {
@@ -2935,7 +2950,6 @@ a .icon-flip-vertical:before {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 10px;
 }
 @media (min-width: 768px) {
   .page-header__personal-page--actions {
@@ -3843,7 +3857,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #003a69;
+  color: #00579c;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4637,8 +4651,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-bottom-color: #0073cf;
 }
 .nav a:hover .caret {
-  border-top-color: #003a69;
-  border-bottom-color: #003a69;
+  border-top-color: #00579c;
+  border-bottom-color: #00579c;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -5547,18 +5561,6 @@ a.list-group-item.active > .badge,
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
-}
-.participant-badge__story--team-jdrf:before {
-  content: url(http://www2.jdrf.org/tjdrf/images/badges/Challenge.jpg);
-  position: absolute;
-  left: 15px;
-}
-.participant-badge {
-  padding: 10px 0 10px 64px;
-  border-bottom: #eeeeee solid 1px;
-}
-.participant-badge p {
-  font-size: 14px;
 }
 .jumbotron {
   padding: 30px;
@@ -7169,6 +7171,82 @@ footer {
   .footer-links__jdrf-links span:nth-child(even) {
     border-right: #E2E2E2 solid 1px;
   }
+}
+.participant-badge__story--team-jdrf:before {
+  content: url(http://www2.jdrf.org/tjdrf/images/badges/Challenge.jpg);
+  position: absolute;
+  left: 15px;
+}
+.participant-badge {
+  padding: 10px 0 10px 64px;
+  border-bottom: #eeeeee solid 1px;
+}
+.participant-badge p {
+  font-size: 14px;
+}
+.page-header__personal-page h1 {
+  margin-bottom: 40px;
+  margin-left: 15px;
+}
+.fundraising-progress-bar {
+  position: relative;
+  height: 14px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.fundraising-progress-bar > span {
+  display: block;
+  height: 100%;
+}
+.fundraising-progress-bar--TJDRF {
+  background-color: rgba(0, 155, 58, 0.3);
+}
+.fundraising-progress-bar--TJDRF > span {
+  background-color: #009b3a;
+  width: 62%;
+}
+.fundraising-stats--personal-page {
+  text-align: justify;
+  color: #555555;
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+}
+.fundraising-stats--personal-page > div {
+  display: inline-block;
+}
+@media (min-width: 30em) {
+  .fundraising-stats--personal-page {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .fundraising-stats--personal-page > div {
+    border-left: #eeeeee solid 1px;
+    padding-left: 16px;
+  }
+  .fundraising-stats--personal-page > div:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+.fundraising-stat__label {
+  color: #999999;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+@media (min-width: 32em) {
+  .fundraising-stat__label {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+.fundraising-stats--personal-page:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
 }
 .clearfix:before,
 .clearfix:after {

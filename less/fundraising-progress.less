@@ -1,0 +1,76 @@
+.page-header__personal-page h1 {
+	margin-bottom: (@line-height-computed * 2);
+	margin-left: (@grid-gutter-width / 2);
+}
+
+.fundraising-progress-bar {
+	position: relative;
+	height: @font-size-base;
+	border-radius: @border-radius-base;
+	margin-bottom: @line-height-computed;
+	overflow: hidden;
+	
+	> span {
+		display: block;
+		height: 100%;
+	}
+	
+}
+
+.fundraising-progress-bar--TJDRF {
+	background-color: fade(@green, 30%);
+	
+	> span {
+		background-color: @green;
+		width: 62%; // =remove= for prototyping purposes only
+	}
+}
+
+.fundraising-stats--personal-page {
+	text-align: justify;
+	color: @gray;
+	font-family: @font-family-gotham-300;
+	font-size: @font-size-h4;
+	line-height: @font-size-h4;
+	font-weight: 300;
+	
+	> div {
+		display: inline-block;
+	}
+	
+	@media (min-width: 30em) {
+		font-size: @font-size-h3;
+		line-height: @font-size-h3;
+		
+		> div {
+			border-left: @gray-lighter solid 1px;
+			padding-left: @padding-large-horizontal;
+		}
+		
+		> div:first-child {
+			border-left: 0;
+			padding-left: 0;
+		}
+		
+	}
+		
+}
+
+.fundraising-stat__label {
+	color: @gray-light;
+	font-size: @font-size-tiny;
+	line-height: @font-size-tiny;
+	text-transform: uppercase;
+	
+	@media (min-width: 32em) {
+		font-size: @font-size-small;
+		line-height: @font-size-small;
+	}
+	
+}
+
+.fundraising-stats--personal-page:after {
+	content: '';
+	display: inline-block;
+	width: 100%; // force a line break to make text-align: justify to work
+}
