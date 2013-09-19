@@ -3012,6 +3012,9 @@ a .icon-flip-vertical:before {
     padding: 32px;
   }
 }
+.content__main.tab-content {
+  border-top: 0;
+}
 .content__sidebar {
   position: relative;
   min-height: 1px;
@@ -4486,7 +4489,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #eeeeee;
 }
 .nav-tabs > li {
   float: left;
@@ -4499,7 +4502,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-radius: 2px 2px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: #eeeeee #eeeeee #eeeeee;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -4658,6 +4661,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+}
+.nav-tabs--participant-page {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .nav-tabs--participant-page {
+    float: left;
+    width: 58.333333333333336%;
+  }
 }
 .navbar {
   position: relative;
