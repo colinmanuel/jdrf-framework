@@ -7380,14 +7380,40 @@ footer {
   display: inline-block;
   width: 100%;
 }
+.content__main .team-roster {
+  padding-top: 16px;
+}
+@media (min-width: 768px) {
+  .content__main .team-roster {
+    padding-top: 32px;
+  }
+}
+.col--donate {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .col--donate {
+    float: left;
+    width: 25%;
+  }
+}
+.team-roster .table > tbody > tr > td {
+  vertical-align: middle;
+}
 .honor-roll {
   overflow: hidden;
-  margin: 0 0 1em;
 }
 .honor-roll p {
-  color: #555555;
+  color: #333333;
   font-size: 14px;
-  margin: 0 0 6px;
+  margin: 0 0 20px;
+}
+.honor-roll__donation-amount {
+  font-size: 12px;
+  color: #555555;
 }
 .widget--social-share {
   font-size: 24px;
