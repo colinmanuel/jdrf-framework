@@ -4508,8 +4508,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #f9f9fb;
-  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
   border-bottom-color: transparent;
   cursor: default;
 }

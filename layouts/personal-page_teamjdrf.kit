@@ -70,7 +70,7 @@
 			<div class="content__row">
 			
 				<ul class="nav nav-tabs nav-tabs--participant-page">
-					<li><a href="#myStory" data-toggle="tab">My Story</a></li>
+					<li class="active"><a href="#myStory" data-toggle="tab">My Story</a></li>
 					<li><a href="#blog" data-toggle="tab">Blog</a></li>
 					<li><a href="#comments" data-toggle="tab">Comments</a></li>
 				</ul>
@@ -98,21 +98,31 @@
 						
 						<p>Kimberly</p>
 						
-					</article> <!-- /myStory -->
-				<div class="tab-pane" id="">
-					
-				</div> <!-- /blog -->
-				<div id="blog" class="tab-pane">
-					<h3>My Latest Post</h3>
-					<span class="muted">September 16, 2013</span>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-				</div> <!-- /blog -->
-				<div id="comments" class="tab-pane" >
-					Facebook Comments
-				</div> <!-- /comments -->
-			</div>	<!-- / tabbed content -->
+						<button type="button" role="donate" class="btn btn-primary btn-lg btn-block" href="#">Donate to Kimberly</button>
+						
+					</article> <!-- /myStory pane -->
+					<div id="blog" class="tab-pane">
+						<div class="blogpost">
+							<h3>My Latest Post</h3>
+							<p class="time">September 16, 2013</span>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<a href="#" class="btn btn-outline">Read more</a>
+							</div> <!-- /blogpost -->
+							<div class="blogpost">
+							<h3>An Update on my Progress</h3>
+							<p class="time">September 3, 2013</span>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<a href="#" class="btn btn-outline">Read more</a>
+							</div> <!-- /blogpost -->
+					</div> <!-- /blog pane -->
+					<div id="comments" class="tab-pane" >
+						Facebook Comments
+					</div> <!-- /comments -->
+				</div>	<!-- / tabbed content -->
 					
 				<div class="content__sidebar" role="complimentary">
+					
+				<div class="widget--participant-badges">
 					
 					<h3>Kimberly's Badges</h3>
 					
@@ -133,6 +143,19 @@
 							<h5 class="participant-badge__headline">Why I Took the Challenge</h5>
 							<p class="participant-badge__description">I'm sharing my reason for joining Team JDRF! Who's your #1?</p>
 						</div>
+						
+					</div> <!-- /participant badges -->
+					
+					<div class="widget--donor-honor-roll">
+						<h3>Top Donors</h3>
+						<div class="honor-roll honor-roll--donors">
+							<p>Anonymous</p>
+							<p>Colleen Norris</p>
+							<p>Faith McCune</p>
+							<p>Lisa Kelley</p>
+							<p>Mike Wolf</p>
+						</div>
+					</div> <!-- /donor honor roll -->
 						
 					</div>
 				</div> <!-- /sidebar -->

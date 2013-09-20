@@ -57,9 +57,11 @@
 
 .btn-default {
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  .box-shadow(0 2px 0 fade(@btn-default-color, 30%));
 }
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  .box-shadow(0 3px 0 darken(@blue, 10%));
 }
 // Warning appears as orange
 .btn-warning {
@@ -78,6 +80,16 @@
   .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
 }
 
+.btn-outline {
+	border-radius: @border-radius-base;
+  border: 1px solid @blue;
+  background-color: transparent;
+  
+  &:hover {
+	  color: #fff;
+	  background-color: @blue;
+  }
+}
 
 // Link buttons
 // -------------------------
@@ -124,12 +136,12 @@
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-base);
 }
 .btn-sm,
 .btn-xs {
   // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-base);
 }
 .btn-xs {
   padding: 1px 5px;
