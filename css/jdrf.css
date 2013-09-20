@@ -7210,6 +7210,9 @@ footer {
 .blogpost .time {
   margin-bottom: 6px;
 }
+.widget--participant-badges {
+  margin-bottom: 2em;
+}
 .participant-badge__story--team-jdrf:before {
   content: url(http://www2.jdrf.org/tjdrf/images/badges/Challenge.jpg);
   position: absolute;
@@ -7295,7 +7298,7 @@ footer {
   overflow: hidden;
   margin: 0 0 1em;
 }
-.honor-roll--donors p {
+.honor-roll p {
   color: #555555;
   font-size: 14px;
   margin: 0 0 6px;
