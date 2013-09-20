@@ -1,8 +1,3 @@
-.page-header__personal-page h1 {
-	margin-bottom: (@line-height-computed * 2);
-	margin-left: (@grid-gutter-width / 2);
-}
-
 .fundraising-progress-bar {
 	position: relative;
 	height: @font-size-base;
@@ -26,7 +21,51 @@
 	}
 }
 
+.page-header__personal-page h1 {
+	margin-bottom: (@line-height-computed * 2);
+	margin-left: (@grid-gutter-width / 2);
+}
+
 .fundraising-stats--personal-page {
+	text-align: justify;
+	color: @gray;
+	font-family: @font-family-gotham-300;
+	font-size: @font-size-h4;
+	line-height: @font-size-h4;
+	font-weight: 300;
+	
+	> div {
+		display: inline-block;
+	}
+	
+	@media (min-width: 30em) {
+		font-size: @font-size-h3;
+		line-height: @font-size-h3;
+		
+		> div {
+			border-left: @gray-lighter solid 1px;
+			padding-left: @padding-large-horizontal;
+		}
+		
+		> div:first-child {
+			border-left: 0;
+			padding-left: 0;
+		}
+		
+	}
+	
+	@media (min-width: @screen-lg) {
+		font-size: @font-size-h2;
+	}
+		
+}
+
+.page-header__team-page h1 {
+	margin-bottom: (@line-height-computed * 2);
+	margin-left: (@grid-gutter-width / 2);
+}
+
+.fundraising-stats--team-page {
 	text-align: justify;
 	color: @gray;
 	font-family: @font-family-gotham-300;
@@ -73,7 +112,8 @@
 	
 }
 
-.fundraising-stats--personal-page:after {
+.fundraising-stats--personal-page:after,
+.fundraising-stats--team-page:after {
 	content: '';
 	display: inline-block;
 	width: 100%; // force a line break to make text-align: justify to work

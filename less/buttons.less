@@ -80,6 +80,12 @@
   .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
 }
 
+// Program Event Colors
+.btn-green {
+  .button-variant(@btn-green-color; @btn-green-bg; @btn-green-border);
+  .box-shadow(0 3px 0 darken(@green, 10%));
+}
+
 .btn-outline {
 	border-radius: @border-radius-base;
   border: 1px solid @blue;
