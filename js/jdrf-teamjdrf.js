@@ -19,5 +19,8 @@
 
   // Bind event listener
   $(window).resize(checkWidth);
+  
+  // Activate Tooltips
+  $('[data-toggle="tooltip"]').tooltip();
     
 })(jQuery);

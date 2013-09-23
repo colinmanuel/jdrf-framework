@@ -49,10 +49,10 @@
 					
 					<div class="fundraising-stats--team-page">
 						<div class="fundraising-stats__amount">
-							$12,345<br/><span class="fundraising-stat__label">I have raised</span>
+							$12,345<br/><span class="fundraising-stat__label">We have raised</span>
 						</div>
 						<div class="fundraising-stats__goal">
-							$20,000<br/><span class="fundraising-stat__label">My goal</span>
+							$20,000<br/><span class="fundraising-stat__label">Our goal</span>
 						</div>
 						<div class="fundraising-stats__percent">
 							62%<br/><span class="fundraising-stat__label">Achieved</span>
@@ -71,7 +71,7 @@
 			
 				<ul class="nav nav-tabs nav-tabs--main-content">
 					<li class="active"><a href="#ourStory" data-toggle="tab">Our Story</a></li>
-					<li><a href="#members" data-toggle="tab">Donate to a Team Member</a></li>
+					<li><a href="#members" data-toggle="tab">Team Members</a></li>
 				</ul>
 				
 				<div class="content__main tab-content">
@@ -103,24 +103,21 @@
 								<table class="table">
 									 <thead>
 										 <tr>
-										 		<th></th>
-										   <th>Team Members</th>
-										   <th>Raised</th>
-										   <th></th>
+										   <th class="table-column--team-member">Team Members</th>
+										   <th class="table-column--raised">Raised</th>
+										   <th class="table-column--donate"></th>
 										 </tr>
 										<thead>
 										<body>
 										 <tr>
-										   <td class="col--donate"><a class="btn btn-outline" href="#">Donate</a></td>
-										   <td class="col--team-member-name"><a href="#">Scott Pincura</a></td>
-										   <td class="col--amount-raised">$400</td>
-										   <td class="col--badges"></td>
+										   <td class="table-column--team-member"><a href="#">Scott Pincura</a><div class="team-roster__team-member--badges"><a data-toggle="tooltip" title="Champion Fundraiser: $3,000"><i class="icon-trophy"></i></a><a data-toggle="tooltip" title="Champion Fundraiser: $3,000"><i class="icon-trophy"></i></a><a data-toggle="tooltip" title="Champion Fundraiser: $3,000"><i class="icon-trophy"></i></a></td>
+										   <td class="table-column--raised">$400</td>
+										   <td class="table-column--donate"><a class="btn btn-outline" href="#">Donate</a></td>
 										 </tr>
 										  <tr>
-										   <td class="col--donate"><a class="btn btn-outline" href="#">Donate</a></td>
-										   <td class="col--team-member-name"><a href="#">Kimberly Shoe</a></td>
-										   <td class="col--amount-raised">$3,130</td>
-										   <td class="col--badges"></td>
+										   <td class="table-column--team-member"><a href="#">Kimberly Shoe</a><div class="col--badges"></td>
+										   <td class="table-column--raised">$3,130</td>
+										   <td class="table-column--donate"><a class="btn btn-outline" href="#">Donate</a></td>
 										 </tr>
 										<tbody>
 								</table>
@@ -163,7 +160,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="//jdrf.org/dev/jdrf-framework/js/jquery-1.10.2.min.js"><\/script>')</script>
   <script src="//jdrf.org/dev/jdrf-framework/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="//jdrf.org/dev/jdrf-framework/js/jdrf-teamjdrf.js"></script>
+  <script src="../js/jdrf-teamjdrf.js"></script>
   <script type="text/javascript">
   	$.noConflict();
 		// Code that uses other library's $ can follow here.

@@ -6,16 +6,39 @@
 	}
 }
 
-.col--donate {
-	.make-sm-column(3);
-}
-
-.team-roster .table {
-  > tbody {
-    > tr {
+.team-roster .table
+  > tbody
+    > tr
       > td {
         vertical-align: middle;
-      }
-    }
+}
+
+.table-column--team-member {
+	width: 70%;
+}
+
+.table-column--raised {
+	width: 15%;
+}
+
+.table-column--donate {
+	width: 15%;
+	text-align: right;
+}
+
+.team-roster__team-member--badges {
+	font-size: 1em;
+	color: @green;
+}
+
+.team-roster__team-member--badges a {
+	padding-right: @padding-base-horizontal;
+	text-decoration: none;
+	color: @green;
+}
+
+@media (max-width: @screen-sm-min) {
+  .table-responsive {
+  border: 0;
   }
 }

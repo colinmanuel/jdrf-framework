@@ -6377,7 +6377,7 @@ body.modal-open,
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background-color: #000000;
+  background-color: #002f5f;
   border-radius: 2px;
 }
 .tooltip-arrow {
@@ -6392,52 +6392,52 @@ body.modal-open,
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #002f5f;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
   left: 5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #002f5f;
 }
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   right: 5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #002f5f;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000000;
+  border-right-color: #002f5f;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000000;
+  border-left-color: #002f5f;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #002f5f;
 }
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
   left: 5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #002f5f;
 }
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
   right: 5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #002f5f;
 }
 .popover {
   position: absolute;
@@ -7388,20 +7388,32 @@ footer {
     padding-top: 32px;
   }
 }
-.col--donate {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .col--donate {
-    float: left;
-    width: 25%;
-  }
-}
 .team-roster .table > tbody > tr > td {
   vertical-align: middle;
+}
+.table-column--team-member {
+  width: 70%;
+}
+.table-column--raised {
+  width: 15%;
+}
+.table-column--donate {
+  width: 15%;
+  text-align: right;
+}
+.team-roster__team-member--badges {
+  font-size: 1em;
+  color: #009b3a;
+}
+.team-roster__team-member--badges a {
+  padding-right: 12px;
+  text-decoration: none;
+  color: #009b3a;
+}
+@media (max-width: 768px) {
+  .table-responsive {
+    border: 0;
+  }
 }
 .honor-roll {
   overflow: hidden;
