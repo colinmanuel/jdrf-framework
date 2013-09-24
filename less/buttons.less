@@ -63,6 +63,10 @@
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
   .box-shadow(0 3px 0 darken(@blue, 10%));
+  
+  &:hover {
+	  border-color: transparent;
+  }
 }
 // Warning appears as orange
 .btn-warning {
@@ -85,6 +89,10 @@
 .btn-green {
   .button-variant(@btn-green-color; @btn-green-bg; @btn-green-border);
   .box-shadow(0 3px 0 darken(@green, 10%));
+  
+  &:hover {
+	  border-color: transparent;
+  }
 }
 
 .btn-outline {
