@@ -2842,8 +2842,8 @@ a .icon-flip-vertical:before {
   width: 100%;
   height: 100%;
   left: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .page__container {
   margin-right: auto;
@@ -3601,6 +3601,8 @@ textarea.input-lg {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .btn:focus {
   outline: thin dotted #333;
@@ -5288,7 +5290,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #002f5f;
 }
 .offcanvas-active .page {
-  left: 275px;
+  -webkit-transform: translate(275px, 0);
+  -ms-transform: translate(275px, 0);
+  transform: translate(275px, 0);
 }
 .site-menu .collapse {
   height: 100%;
@@ -5340,7 +5344,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 5px 12px;
   color: #999999;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
 }
 .breadcrumb {
   margin-left: -15px;
@@ -7022,6 +7026,8 @@ td.site-header__links {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     border: #0073cf solid 1px;
     border-radius: 2px;
     padding: padding-base-vertical padding-base-horizontal;
@@ -7379,6 +7385,9 @@ footer {
   content: '';
   display: inline-block;
   width: 100%;
+}
+.page-header__fundraising-page--actions [role="register"] {
+  margin-bottom: 1em;
 }
 .content__main .team-roster {
   padding-top: 16px;
@@ -7955,6 +7964,18 @@ td.hidden-lg {
   th.hidden-lg,
   td.hidden-lg {
     display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  .hidden-text-xs {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
   }
 }
 .visible-print {

@@ -66,7 +66,7 @@
   	<li class="site-menu__list--item"><a href="#">Join an Event</a></li>
   	<li class="site-menu__list--item"><a href="#">Start an Event</a></li>
   	<li class="site-menu__list--item"><a href="#">Start a Campaign</a></li>
-  	<li class="site-menu__list--item more"><a data-toggle="collapse" data-target="#more" href="#">More</a></li>
+  	<li class="site-menu__list--item more visible-xs"><a data-toggle="collapse" data-target="#more" href="#">More</a></li>
   </ul>
 
 <div id="more" class="collapse">  
@@ -80,9 +80,6 @@
   	<li class="site-menu__list--section-title">Campaigns
   		<li class="site-menu__list--item"><a href="#">Search for a Campaign</a></li>
   		<li class="site-menu__list--item"><a href="#">Start an Individual Campaign</a></li>
-  	</li>
-  	<li class="site-menu__list--section-title">Fundraising
-  			<li class="site-menu__list--item"><a href="#">Fundraising Tips</a></li>
   	</li>
   	<li class="site-menu__list--section-title">Fundraising
   		<li class="site-menu__list--item"><a href="#">Fundraising Tips</a></li>
@@ -132,7 +129,10 @@
 				</div> <!-- /page-header__fundraising-page -->
 				
 				<div class="page-header__fundraising-page--actions">
-					<button type="button" role="donate" class="btn btn-primary btn-lg btn-block" href="#">Register</button>
+					<div class="row">
+						<button type="button" role="register" class="btn btn-green btn-lg btn-block" href="#">Register</button>
+						<button type="button" role="donate" class="btn btn-primary btn-lg btn-block" href="#members" data-toggle="tab">Donate<span class="hidden-text-xs"> to a Team Member</span></button>
+					</div>
 				</div>
 		
 			</div>
