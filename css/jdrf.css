@@ -7086,62 +7086,13 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-.footer-brand__row {
-  position: relative;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-.footer-brand__row:before,
-.footer-brand__row:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.footer-brand__row:after {
-  clear: both;
-}
-.footer-brand__row:before,
-.footer-brand__row:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.footer-brand__row:after {
-  clear: both;
-}
 .footer-brand__logo--teamjdrf {
   width: 100%;
-  padding-bottom: 6px;
+  margin-bottom: 1em;
 }
 .footer-brand__logo--jdrf {
   width: 150px;
-}
-@media (min-width: 768px) {
-  .footer-brand__logo--jdrf {
-    text-align: right;
-    padding-left: 12px;
-    padding-top: 3px;
-    float: left;
-  }
-}
-.footer-brand__description {
-  color: #999999;
-  font-size: 12px;
-}
-@media (min-width: 768px) {
-  .footer-brand__description {
-    text-align: right;
-    float: left;
-    font-size: 14px;
-  }
+  margin-bottom: 1em;
 }
 .footer-links {
   margin-right: auto;
@@ -7284,6 +7235,10 @@ footer {
   }
 }
 .team-name {
+  padding-left: 15px;
+  margin-bottom: 1em;
+}
+.participant-name {
   padding-left: 15px;
   margin-bottom: 1em;
 }
