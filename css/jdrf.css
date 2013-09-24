@@ -686,11 +686,6 @@ h4 small,
 .h4 small {
   font-size: 14px;
 }
-.page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
-}
 ul,
 ol {
   margin-top: 0;
@@ -2907,7 +2902,7 @@ a .icon-flip-vertical:before {
 }
 .page-header {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 .page-header:before,
 .page-header:after {
@@ -7287,6 +7282,10 @@ footer {
   .fundraising-page__actions {
     margin-left: 8.333333333333332%;
   }
+}
+.team-name {
+  padding-left: 15px;
+  margin-bottom: 1em;
 }
 .fundraising-progress-bar {
   position: relative;
