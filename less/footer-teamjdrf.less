@@ -1,7 +1,7 @@
 footer {
 	margin-right: auto;
 	margin-left: auto;
-	background: @gray-lighter;
+	border-top: darken(@body-bg, 2%) solid 1px;
 }
 
 .footer-brand {
@@ -13,7 +13,7 @@ footer {
 
 .footer-brand__container {
 	position: relative;
-	max-width: 570px;
+	max-width: percentage(6 / @grid-columns);
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -30,39 +30,72 @@ footer {
 	margin-bottom: 1em;
 }
 
-.footer-links {
-	.container-fixed();
-	max-width: 1170px;
-	
+.site-menu--footer__wrap {
+	background-color: darken(@body-bg, 3%);
 }
 
-.footer-links__social-sites {
+.site-menu--footer {
+	font-size: @font-size-small;
+	position: relative;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1em;
+	
+	@media (min-width: @screen-xs) {
+		text-align: justify;
+	}
+}
+
+.site-menu--footer ul {
+	vertical-align: top;
+	list-style: none;
+	.clearfix();
+	
+	
+	@media (min-width: @screen-xs) {
+		display: inline-block;
+	}
+}
+
+// force a line break to make text-align: justify to work
+.site-menu--footer:after {
+	content: '';
+	display: inline-block;
 	width: 100%;
-	text-align: center;
-	padding: @padding-base-vertical 0;
+}
+
+.footer-links--bottom-bar__wrap {
+	background-color: @green;
+}
+
+.footer-links--bottom-bar {
+	margin-right: auto;
+  margin-left: auto;
+	max-width: 1170px;
+	.clearfix();
 	
 	@media (min-width: @screen-sm) {
-		width: auto;
-		float: right;
-		text-align: right;
-		padding-right: @padding-base-horizontal;
+		padding-left:  (@grid-gutter-width / 2);
+		padding-right: (@grid-gutter-width / 2);
 	}
 	
 }
 
-.footer-links__social-sites span {
-	padding-left:  @padding-large-horizontal;
-}
-
-.footer-links__jdrf-links {
+.footer-links--bottom-bar {
 	text-align: center;
+	
+	a,
+	&a:hover {
+		color: #fff;
+	}
 }
 
-.footer-links__jdrf-links span {
+.footer-links--bottom-bar span {
 	width: 50%;
 	float: left;
 	padding: @padding-base-vertical 0;
-	border-top: #E2E2E2 solid 1px;
+	border-top: darken(@green, 5%) solid 1px;
 	
 	@media (min-width: @screen-sm) {
     width: 15%;
@@ -75,13 +108,13 @@ footer {
   
 }
 
-.footer-links__jdrf-links span:nth-child(odd) {
-	border-right: #E2E2E2 solid 1px;
+.footer-links--bottom-bar span:nth-child(odd) {
+	border-right: darken(@green, 5%) solid 1px;
 	
 }
 
-@media (min-width: @grid-float-breakpoint) {
-	.footer-links__jdrf-links span:nth-child(even) {
-    border-right: #E2E2E2 solid 1px;
+@media (min-width: @screen-sm) {
+	.footer-links--bottom-bar span:nth-child(even) {
+    border-right: darken(@green, 5%) solid 1px;
   }
 }  	
