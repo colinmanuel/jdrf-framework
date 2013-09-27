@@ -23,5 +23,7 @@
   // Activate Tooltips
   $('[data-toggle="tooltip"]').tooltip();
   
-    
+  // Activate SlideViews
+  $('.views').simpleSlideView( {duration: 250});
+  
 })(jQuery);

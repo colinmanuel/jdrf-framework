@@ -6121,6 +6121,11 @@ a.list-group-item:focus {
 .panel-info > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #bce8f1;
 }
+.content__main.views {
+  background-color: #f9f9fb;
+  border: 0;
+  padding: 0;
+}
 .well {
   min-height: 20px;
   padding: 19px;
