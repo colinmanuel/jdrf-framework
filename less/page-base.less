@@ -34,13 +34,13 @@
 .content__main {
 	.make-sm-column(7);
 	background-color: #fff;
-	padding: 0 @padding-large-horizontal @padding-large-horizontal @padding-large-horizontal;
+	padding: @padding-large-horizontal;
 	margin-bottom: 2em;
 	border-radius: @border-radius-small;
 	border: @gray-lighter solid 1px;
 
 	@media (min-width: @screen-sm) {
-		padding: 0 (@padding-large-horizontal * 2) (@padding-large-horizontal * 2) (@padding-large-horizontal * 2);
+		padding: (@padding-large-horizontal * 2);
 	}
 }
 
@@ -52,4 +52,3 @@
 	.make-sm-column(4);
 	.make-sm-column-offset(1);
 }
-
