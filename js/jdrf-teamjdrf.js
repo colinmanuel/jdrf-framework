@@ -22,6 +22,11 @@
   
   // Activate Tooltips
 	$('[data-toggle="tooltip"]').tooltip();
+	
+	// Activate Personal Page Carousels
+	$('.carousel--personal-page').carousel({
+  	interval: false
+	})
   
   // This is a more complex example. In this case, we want to use a
 // sliding view for layouts smaller than 768 px/pt, but a different
