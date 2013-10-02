@@ -6999,8 +6999,15 @@ body.modal-open,
 @media (min-width: 768px) {
   .site-menu__toggle {
     height: 64px;
-    padding: 21px 20px 0 20px;
+    padding: 15px 20px 0 20px;
     border-right: #eeeeee solid 1px;
+  }
+  .site-menu__toggle:after {
+    content: 'menu';
+    font-size: 12px;
+    position: absolute;
+    left: 13px;
+    padding-top: 20px;
   }
 }
 .offcanvas-active .site-menu__toggle {
