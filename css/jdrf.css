@@ -5639,7 +5639,21 @@ a.list-group-item.active > .badge,
     font-size: 63px;
   }
 }
-.thumbnail {
+.hero-image {
+  max-width: 1140px;
+  max-height: 384px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+/*
+.hero-image {
+	margin-left: -15px;
+	margin-right: -15px;
+	max-height: 384px;
+	position: relative;
+	overflow: hidden;
+}*/.thumbnail {
   padding: 4px;
   line-height: 1.428571429;
   background-color: #f9f9fb;
@@ -7479,6 +7493,10 @@ footer {
 .event-page__actions [role="register"] {
   margin-bottom: 1em;
 }
+.image--event-description {
+  border: solid 2px #eeeeee;
+  margin-bottom: 20px;
+}
 .fundraising-page__participant-info {
   position: relative;
   min-height: 1px;
@@ -7660,6 +7678,9 @@ footer {
   .table-responsive {
     border: 0;
   }
+}
+.widget--donor-honor-roll {
+  margin-bottom: 2em;
 }
 .honor-roll {
   overflow: hidden;
