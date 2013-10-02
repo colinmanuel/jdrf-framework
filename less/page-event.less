@@ -1,0 +1,49 @@
+.event-page__info {
+	.make-sm-column(7);
+}
+
+.event-page__actions {
+	.make-sm-column(4);
+	.make-sm-column-offset(1);
+}
+
+.page-headline--event-name {
+	margin-bottom: @padding-base-vertical;
+	padding: 0 0 0 (@grid-gutter-width / 2);
+}
+
+.event-details {
+	list-style: none;
+	padding: 0;
+	color: @gray;
+	
+	& li {
+		display: inline-block;
+		margin-right: @padding-base-horizontal;
+	}
+}
+
+.event-details__date:before {
+	font-family: 'FontAwesome';
+	content: @calendar;
+	padding-right: @padding-small-horizontal;
+}
+
+.event-details__location:before {
+	font-family: 'FontAwesome';
+	content: @map-marker;
+	padding-right: @padding-small-horizontal;
+}
+
+.event-page__info .event-details {
+	margin-bottom: 2em;
+}
+
+.event-details__lead {
+	.lead;
+	color: @gray;
+}
+
+.event-page__actions [role="register"] {
+	margin-bottom: 1em;
+}

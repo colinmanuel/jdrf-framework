@@ -36,11 +36,27 @@
 		</ol>
 		
 		<div class="page__row">
-		
+			
 			<div class="page-header">
 				
-				<h1 class="team-name">Disney Marathon</h1>
-						
+				<h1 class="page-headline--event-name">Disney Marathon</h1>
+			
+				<div class="event-page__info">
+					<ul class="event-details">
+						<li class="event-details__date">January 9 - 12, 2014</li>
+						<li class="event-details__location">Orlando, FL</li>
+					</ul>
+					
+					<p class="event-details__lead">Imagine a weekend of runs where every mile is filled with Disney fun.</p>					
+				</div> <!-- /page-header -->
+				
+				<div class="event-page__actions">
+					<div class="row">
+						<button type="button" role="register" class="btn btn-green btn-lg btn-block" href="#">Register</button>
+						<button type="button" role="donate" class="btn btn-primary btn-lg btn-block" href="#members" data-toggle="tab">Donate<span class="hidden-text-xs"> to a Participant</span></button>
+					</div>
+				</div>
+		
 			</div>
 		
 			<div class="content__row views">
@@ -55,7 +71,8 @@
 						<a class="list-group-item" href="#course" data-pushview>Course</a>
 						<a class="list-group-item" href="#faq" data-pushview>FAQ</a>
 					</div> <!-- /views-nav -->
-					
+				
+				<div class="hidden-xs">	<!-- ==remove== container for prototype only -->
 					<div class="widget--social-share">
 						<h3>Spread the Word</h3>
 						<a href="#"><span class="icon-facebook"  aria-hidden="true"></span></a>
@@ -73,7 +90,7 @@
 						</div>
 						<a href="#" class="btn btn-outline">All Donors</a>
 					</div> <!-- /donor honor roll -->
-					
+				</div><!-- ==remove== container for prototype only -->
 				</div> <!-- /sidebar -->
 
 				
@@ -90,8 +107,8 @@
 						  		<li>Dopey - Participants will run the 5K, 10K, Half Marathon and Marathon</li>
 						  	</ul>
 						  	<ul class="view-nav">
-						    	<li class="view-nav--contents"><a href="#event-info-nav" data-popview>Contents</a></li>
-						  		<li class="view-nav--next"><a href="#what-to-expect" data-pushview>What to Expect</a></li>
+						    	<li class="view-nav__contents"><a href="#event-info-nav" data-popview>Contents</a></li>
+						  		<li class="view-nav__next"><a href="#what-to-expect" data-pushview>What to Expect</a></li>
 						    </ul>
 						  </div>
 						</div> <!-- /description -->
@@ -120,8 +137,8 @@
 						
 						  	<h4>The knowledge that you've made a significant difference in the fight against diabetes.</h4>
 						  	<ul class="view-nav">
-						    	<li class="view-nav--contents"><a href="#event-info-nav" data-popview>Contents</a></li>
-						  		<li class="view-nav--next"><a href="#fundraising" data-pushview>Fundraising</a></li>
+						    	<li class="view-nav__contents"><a href="#event-info-nav" data-popview>Contents</a></li>
+						  		<li class="view-nav__next"><a href="#fundraising" data-pushview>Fundraising</a></li>
 						    </ul>
 						  </div>
 						</div> <!-- /what to expect -->
@@ -141,8 +158,8 @@
 						  	<h4>4.  Agree to the Contract and Financial Policies & Commitments</h4>
 						  	<p>Upon completing your registration, you will be asked to commit to being responsible for the remaining balance of your fundraising minimum, should you not reach it. We make a commitment to provide you with support for your Race weekend and the training to get you prepared for it. It is important to the program that you are able to commit to reaching your fundraising minimum and we are here to help you every step of the way.</p>
 						  	<ul class="view-nav">
-						    	<li class="view-nav--contents"><a href="#event-info-nav" data-popview>Contents</a></li>
-						  		<li class="view-nav--next"><a href="#weekend-schedule" data-pushview>Weekend Schedule</a></li>
+						    	<li class="view-nav__contents"><a href="#event-info-nav" data-popview>Contents</a></li>
+						  		<li class="view-nav__next"><a href="#weekend-schedule" data-pushview>Weekend Schedule</a></li>
 						    </ul>
 						  </div>
 						</div> <!-- /fundraising -->
@@ -150,7 +167,7 @@
 						<div class="view" id="weekend-schedule">
 						  <div class="view-content">
 						  	<h2>Weekend Schedule</h2>
-						  	<p class="lead">After all of your dedication, fundraising, and training, JDRF offers a fun-filled experience of a lifetime.</p>
+						  	<p>After all of your dedication, fundraising, and training, JDRF offers a fun-filled experience of a lifetime.</p>
 						  	<h4>Thursday</h4>
 						  	<p><strong>6:15 a.m.</strong><br/>5K (Dopey participants)</p>
 						  	<p><strong>8:30 a.m. - 6:30 p.m.</strong><br/>Disney's Health & Fitness Expo</p>
@@ -173,8 +190,8 @@
 						  	<h4>Sunday</h4>
 						  	<p><strong>3:00 a.m. - 4:00 a.m. and 7:00 a.m. - 2:30 p.m.</strong><br/>Full Marathon (Dopey, Goofy, Full Marathon participants)</p>
 						  	<ul class="view-nav">
-						    	<li class="view-nav--contents"><a href="#event-info-nav" data-popview>Contents</a></li>
-						  		<li class="view-nav--next"><a href="#course" data-pushview>Course</a></li>
+						    	<li class="view-nav__contents"><a href="#event-info-nav" data-popview>Contents</a></li>
+						  		<li class="view-nav__next"><a href="#course" data-pushview>Course</a></li>
 						    </ul>
 						  </div>
 						</div> <!-- /weekend schedule -->
@@ -184,8 +201,8 @@
 						  	<h2>Course</h2>
 						  	<p>Coming Soon!</p>
 						  	<ul class="view-nav">
-						    	<li class="view-nav--contents"><a href="#event-info-nav" data-popview>Contents</a></li>
-						  		<li class="view-nav--next"><a href="#faq" data-pushview>F.A.Q.</a></li>
+						    	<li class="view-nav__contents"><a href="#event-info-nav" data-popview>Contents</a></li>
+						  		<li class="view-nav__next"><a href="#faq" data-pushview>F.A.Q.</a></li>
 						    </ul>
 						  </div>
 						</div> <!-- /course -->
@@ -221,13 +238,31 @@
 						  <h4>How much time do I have to commit to this?</h4>
 						  <p>How much time you train is completely up to you. Your JDRF Coach can help you determine the best time commitment for your fitness level. If you are a novice, most coaches will recommend you begin training 16 weeks before a full marathon and 12 weeks before a half marathon.</p>
 						  <ul class="view-nav">
-						    	<li class="view-nav--contents"><a href="#event-info-nav" data-popview>Contents</a></li>
-						  		<li class="view-nav--next"><a href="#description" data-pushview>Description</a></li>
+						    	<li class="view-nav__contents"><a href="#event-info-nav" data-popview>Contents</a></li>
+						  		<li class="view-nav__next"><a href="#description" data-pushview>Description</a></li>
 						    </ul>
 						  </div>
 						</div> <!-- /faq -->
 						
-					
+					<div class="visible-xs">	<!-- ==remove== container for prototype only -->
+					<div class="widget--social-share">
+						<h3>Spread the Word</h3>
+						<a href="#"><span class="icon-facebook"  aria-hidden="true"></span></a>
+						<a href="#"><span class="icon-twitter"  aria-hidden="true"></span></a>
+						<a href="#"><span class="icon-google-plus"  aria-hidden="true"></span></a>
+						<a href="#"><span class="icon-envelope"  aria-hidden="true"></span></a>
+					</div> <!-- /social share -->
+										
+					<div class="widget--donor-honor-roll">
+						<h3>Top Donors</h3>
+						<div class="honor-roll">
+							<p>Joshua Luster<br/><span class="honor-roll__donation-amount">$50.00</span></p>
+							<p>JSC Speed</p>
+							<p>Keith Moyer<br/><span class="honor-roll__donation-amount">$250.00</span></p>
+						</div>
+						<a href="#" class="btn btn-outline">All Donors</a>
+					</div> <!-- /donor honor roll -->
+				</div><!-- ==remove== container for prototype only -->
 				</div>	<!-- / main content -->
 								
 			</div> <!-- /content__row -->
