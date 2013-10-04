@@ -1,0 +1,42 @@
+.alternate-choice--community-events {
+	.make-sm-column(8);
+	.make-sm-column-offset(2);
+	background-color: fade(@green, 20%);
+	border-radius: @border-radius-base;
+	border: solid 1px @green;
+	color: @green;
+	padding: @padding-base-horizontal;
+	position: relative;
+	text-align: center;
+	
+	@media (min-width: @screen-xs) {
+		text-align: left;
+	}
+	
+	@media (min-width: @screen-sm) {
+		padding: (@padding-base-horizontal * 2);
+	}
+}
+
+.alternate-choice--community-events__inner {
+	
+	@media (min-width: @screen-xs) {
+		margin-left: 15%;
+	}
+}
+
+.alternate-choice__heading {
+	font-size: @font-size-h4;
+}
+
+@media (min-width: @screen-xs) {
+
+	.alternate-choice--community-events__inner:before {
+		font-family: 'FontAwesome';
+		content: @calendar;
+		position: absolute;
+		left: 5%;
+		top: 10%;
+		font-size: 3em;
+	}
+}
