@@ -1,0 +1,36 @@
+.search-result {
+	padding-bottom: (@line-height-computed / 2);
+	margin-bottom: @line-height-computed;
+	border-bottom: solid 1px @gray-lighter;
+}
+
+.search-result__title {
+	margin-bottom: (@line-height-computed / 2);
+}
+
+.search-result__meta {
+	margin-bottom: @line-height-computed;
+}
+
+.search-result__date {
+	
+	&:before {
+		font-family: 'FontAwesome';
+		content: @calendar;
+		padding-right: @padding-small-horizontal;
+	}
+}
+
+.search-result__location {
+	
+	&:before {
+		font-family: 'FontAwesome';
+		content: @map-marker;
+		padding-left: @padding-base-horizontal;
+		padding-right: @padding-small-horizontal;
+	}
+}
+
+.search-result__excerpt {
+	color: @gray-light;
+}

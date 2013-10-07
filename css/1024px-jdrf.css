@@ -710,6 +710,15 @@ ol ol {
   padding-left: 5px;
   padding-right: 5px;
 }
+.checkmarks {
+  list-style: none;
+  padding: 0;
+}
+.checkmarks li:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  padding-right: 10px;
+}
 dl {
   margin-bottom: 20px;
 }
@@ -2981,6 +2990,9 @@ a .icon-flip-vertical:before {
   }
 }
 .content__main.tab-content {
+  border-top: 0;
+}
+.content__main--landing-page.tab-content {
   border-top: 0;
 }
 .content__sidebar {
