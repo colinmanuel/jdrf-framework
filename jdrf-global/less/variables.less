@@ -1,0 +1,1384 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+// Brand colors
+// -------------------------
+
+@blue:         					#0073cf; // PMS 285.  Primary brand color
+@blue-dark:        			#002f5f; // PMS 295.  Primary accent brand color
+@orange:         				#f0ad4e; // Used for Donate and other CTA contrast needs
+@yellow:         				#fdc82f; // Accent color for Walk and Kids Walk to Cure Diabetes
+@green:         				#009b3a; // Accent color for Ride to Cure Diabetes and Team JDRF
+
+@brand-primary:         #0073cf; 
+@brand-success:         #5cb85c; // Bootstrap default
+@brand-warning:         #f0ad4e; // Bootstrap default
+@brand-danger:          #d9534f; // Bootstrap default
+@brand-info:            #5bc0de; // Bootstrap default
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #f9f9fb;
+@text-color:            @gray-dark;
+
+// Links
+// -------------------------
+
+@link-color:            @blue;
+@link-hover-color:      darken(@link-color, 10%);
+
+// Typography
+// -------------------------
+
+// Gotham fonts served via HF&J 
+// 'Gotham SSm 4r' etc are Legacy Support fo IE8
+@font-family-gotham-300:				'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+@font-family-gotham-400:				'Gotham SSm 4r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+@font-family-gotham-500:				'Gotham SSm 5r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+@font-family-gotham-700:				'Gotham SSm 7r', 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
+
+@font-family-sans-serif:  			@font-family-gotham-300;
+@font-family-serif:       			Georgia, 'Times New Roman', Times, serif;
+@font-family-monospace:   			Monaco, Menlo, Consolas, 'Courier New', monospace;
+@font-family-base:        			@font-family-sans-serif;
+
+@font-size-base:          			14px;
+@font-size-medium:							floor(@font-size-base * 1.15); // ~16px
+@font-size-large:         			ceil(@font-size-base * 1.25); // ~18px
+@font-size-small:         			ceil(@font-size-base * 0.85); // ~12px
+@font-size-tiny:								ceil(@font-size-base * 0.7); // ~10px
+
+@font-size-h1:            			ceil(@font-size-base * 2.70); // ~38px
+@font-size-h2:            			ceil(@font-size-base * 2.25); // ~32px
+@font-size-h3:            			ceil(@font-size-base * 1.70); // ~24px
+@font-size-h4:            			ceil(@font-size-base * 1.25); // ~18px
+@font-size-h5:            			@font-size-base;							// ~14px
+@font-size-h6:            			ceil(@font-size-base * 0.85); // ~12px
+
+@line-height-base:        			1.428571429; // 20/14
+@line-height-medium:						1.5;
+@line-height-computed:    			floor(@font-size-base * @line-height-base);
+@line-height-medium-computed:   floor(@font-size-medium * @line-height-medium);
+
+@headings-font-family:    			@font-family-base;
+@headings-font-weight:    			300;
+@headings-line-height:    			1.2;
+@headings-color:          			inherit;
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+@padding-base-vertical:          6px;
+@padding-base-horizontal:        12px;
+
+@padding-large-vertical:         10px;
+@padding-large-horizontal:       16px;
+
+@padding-small-vertical:         5px;
+@padding-small-horizontal:       10px;
+
+@line-height-large:              1.33;
+@line-height-small:              1.5;
+
+@border-radius-base:             2px;
+@border-radius-large:            4px;
+@border-radius-small:            1px;
+
+@component-active-color:         #fff;
+@component-active-bg:            @brand-primary;
+
+@caret-width-base:               4px;
+@caret-width-large:              5px;
+
+
+// Tables
+// -------------------------
+
+@table-cell-padding:                 8px;
+@table-condensed-cell-padding:       5px;
+
+@table-bg:                           transparent; // overall background-color
+@table-bg-accent:                    #f9f9f9; // for striping
+@table-bg-hover:                     #f5f5f5;
+@table-bg-active:                    @table-bg-hover;
+
+@table-border-color:                 #ddd; // table and cell border
+
+
+// Buttons
+// -------------------------
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              @text-color;
+@btn-default-bg:                 #fff;
+@btn-default-border:             @gray-lighter;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-green-color:              	 #fff;
+@btn-green-bg:                 	 @green;
+@btn-green-border:             	 darken(@btn-green-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;
+
+
+// Forms
+// -------------------------
+
+@input-bg:                       #fff;
+@input-bg-disabled:              @gray-lighter;
+
+@input-color:                    @gray;
+@input-border:                   #ccc;
+@input-border-radius:            @border-radius-base;
+@input-border-focus:             #66afe9;
+
+@input-color-placeholder:        @gray-light;
+
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-large:             (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+@legend-color:                   @gray-dark;
+@legend-border-color:            #e5e5e5;
+
+@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-border-color: @input-border;
+
+
+// Dropdowns
+// -------------------------
+
+@dropdown-bg:                    #fff;
+@dropdown-border:                rgba(0,0,0,.15);
+@dropdown-fallback-border:       #ccc;
+@dropdown-divider-bg:            #e5e5e5;
+
+@dropdown-link-color:            @gray-dark;
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-bg:         #f5f5f5;
+
+@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-bg:        @component-active-bg;
+
+@dropdown-link-disabled-color:   @gray-light;
+
+@dropdown-header-color:          @gray-light;
+
+@dropdown-caret-color:           #000;
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1010;
+@zindex-tooltip:           1030;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+@grid-columns:              12;
+// Padding, to be divided by two and applied to the left and right of all columns
+@grid-gutter-width:         30px;
+// Point at which the navbar stops collapsing
+@grid-float-breakpoint:     @screen-sm;
+
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+@navbar-height:                    50px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-default-color:             #777;
+@navbar-default-bg:                #f8f8f8;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+
+// Navbar links
+@navbar-default-link-color:                #777;
+@navbar-default-link-hover-color:          #333;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #555;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-icon-bar-bg:        #ccc;
+@navbar-default-toggle-border-color:       #ddd;
+
+
+// Inverted navbar
+//
+// Reset inverted navbar basics
+@navbar-inverse-color:                      @gray-light;
+@navbar-inverse-bg:                         #222;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            #333;
+@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        #333;
+
+
+// Navs
+// -------------------------
+
+@nav-link-padding:                          10px 15px;
+@nav-link-hover-bg:                         @gray-lighter;
+
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
+
+@nav-open-link-hover-color:                 #fff;
+@nav-open-caret-border-color:               #fff;
+
+// Tabs
+@nav-tabs-border-color:                     @gray-lighter;
+
+@nav-tabs-link-hover-border-color:          @gray-lighter;
+
+@nav-tabs-active-link-hover-bg:             #fff;
+@nav-tabs-active-link-hover-color:          @gray;
+@nav-tabs-active-link-hover-border-color:   @gray-lighter;
+
+@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+// Pills
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
+
+
+// Pagination
+// -------------------------
+
+@pagination-bg:                        #fff;
+@pagination-border:                    #ddd;
+
+@pagination-hover-bg:                  @gray-lighter;
+
+@pagination-active-bg:                 @brand-primary;
+@pagination-active-color:              #fff;
+
+@pagination-disabled-color:            @gray-light;
+
+
+// Pager
+// -------------------------
+
+@pager-border-radius:                  15px;
+@pager-disabled-color:                 @gray-light;
+
+
+// Jumbotron
+// -------------------------
+
+@jumbotron-padding:              30px;
+@jumbotron-color:                inherit;
+@jumbotron-bg:                   @gray-lighter;
+
+@jumbotron-heading-color:        inherit;
+
+
+// Form states and alerts
+// -------------------------
+
+@state-warning-text:             #c09853;
+@state-warning-bg:               #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
+
+@state-danger-text:              #b94a48;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 3%);
+
+@state-success-text:             #468847;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                #3a87ad;
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+
+// Tooltips
+// -------------------------
+@tooltip-max-width:           200px;
+@tooltip-color:               #fff;
+@tooltip-bg:                  @blue-dark;
+
+@tooltip-arrow-width:         5px;
+@tooltip-arrow-color:         @tooltip-bg;
+
+
+// Popovers
+// -------------------------
+@popover-bg:                          #fff;
+@popover-max-width:                   276px;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+
+@popover-title-bg:                    darken(@popover-bg, 3%);
+
+@popover-arrow-width:                 10px;
+@popover-arrow-color:                 #fff;
+
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-outer-color:           rgba(0,0,0,.25);
+@popover-arrow-outer-fallback-color:  #999;
+
+
+// Labels
+// -------------------------
+
+@label-default-bg:            @gray-light;
+@label-primary-bg:            @brand-primary;
+@label-success-bg:            @brand-success;
+@label-info-bg:               @brand-info;
+@label-warning-bg:            @brand-warning;
+@label-danger-bg:             @brand-danger;
+
+@label-color:                 #fff;
+@label-link-hover-color:      #fff;
+
+
+// Modals
+// -------------------------
+@modal-inner-padding:         20px;
+
+@modal-title-padding:         15px;
+@modal-title-line-height:     @line-height-base;
+
+@modal-content-bg:                             #fff;
+@modal-content-border-color:                   rgba(0,0,0,.2);
+@modal-content-fallback-border-color:          #999;
+
+@modal-backdrop-bg:           #000;
+@modal-header-border-color:   #e5e5e5;
+@modal-footer-border-color:   @modal-header-border-color;
+
+
+// Alerts
+// -------------------------
+@alert-padding:               15px;
+@alert-border-radius:         @border-radius-base;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            @state-success-bg;
+@alert-success-text:          @state-success-text;
+@alert-success-border:        @state-success-border;
+
+@alert-info-bg:               @state-info-bg;
+@alert-info-text:             @state-info-text;
+@alert-info-border:           @state-info-border;
+
+@alert-warning-bg:            @state-warning-bg;
+@alert-warning-text:          @state-warning-text;
+@alert-warning-border:        @state-warning-border;
+
+@alert-danger-bg:             @state-danger-bg;
+@alert-danger-text:           @state-danger-text;
+@alert-danger-border:         @state-danger-border;
+
+
+// Progress bars
+// -------------------------
+@progress-bg:                 #f5f5f5;
+@progress-bar-color:          #fff;
+
+@progress-bar-bg:             @brand-primary;
+@progress-bar-success-bg:     @brand-success;
+@progress-bar-warning-bg:     @brand-warning;
+@progress-bar-danger-bg:      @brand-danger;
+@progress-bar-info-bg:        @brand-info;
+
+
+// List group
+// -------------------------
+@list-group-bg:               #fff;
+@list-group-border:           @gray-lighter;
+@list-group-border-radius:    @border-radius-base;
+
+@list-group-hover-bg:         #f5f5f5;
+@list-group-active-color:     @component-active-color;
+@list-group-active-bg:        @component-active-bg;
+@list-group-active-border:    @list-group-active-bg;
+
+@list-group-link-color:          #555;
+@list-group-link-heading-color:  #333;
+
+
+// Panels
+// -------------------------
+@panel-bg:                    #fff;
+@panel-inner-border:          #ddd;
+@panel-border-radius:         @border-radius-base;
+@panel-footer-bg:             #f5f5f5;
+
+@panel-default-text:          @gray-dark;
+@panel-default-border:        #ddd;
+@panel-default-heading-bg:    #f5f5f5;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @brand-primary;
+@panel-primary-heading-bg:    @brand-primary;
+
+@panel-success-text:          @state-success-text;
+@panel-success-border:        @state-success-border;
+@panel-success-heading-bg:    @state-success-bg;
+
+@panel-warning-text:          @state-warning-text;
+@panel-warning-border:        @state-warning-border;
+@panel-warning-heading-bg:    @state-warning-bg;
+
+@panel-danger-text:           @state-danger-text;
+@panel-danger-border:         @state-danger-border;
+@panel-danger-heading-bg:     @state-danger-bg;
+
+@panel-info-text:             @state-info-text;
+@panel-info-border:           @state-info-border;
+@panel-info-heading-bg:       @state-info-bg;
+
+
+// Thumbnails
+// -------------------------
+@thumbnail-padding:           4px;
+@thumbnail-bg:                @body-bg;
+@thumbnail-border:            #ddd;
+@thumbnail-border-radius:     @border-radius-base;
+
+@thumbnail-caption-color:     @text-color;
+@thumbnail-caption-padding:   9px;
+
+
+// Wells
+// -------------------------
+@well-bg:                     #f5f5f5;
+
+
+// Badges
+// -------------------------
+@badge-color:                 #fff;
+@badge-link-hover-color:      #fff;
+@badge-bg:                    @gray-light;
+
+@badge-active-color:          @link-color;
+@badge-active-bg:             #fff;
+
+@badge-font-weight:           bold;
+@badge-line-height:           1;
+@badge-border-radius:         10px;
+
+
+// Breadcrumbs
+// -------------------------
+@breadcrumb-bg:               #f5f5f5;
+@breadcrumb-color:            #ccc;
+@breadcrumb-active-color:     @gray-light;
+@breadcrumb-separator:        "/";
+
+
+// Carousel
+// ------------------------
+
+@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+
+@carousel-control-color:                      #fff;
+@carousel-control-width:                      15%;
+@carousel-control-opacity:                    .5;
+@carousel-control-font-size:                  20px;
+
+@carousel-indicator-active-bg:                #fff;
+@carousel-indicator-border-color:             #fff;
+
+@carousel-caption-color:                      #fff;
+
+
+// Close
+// ------------------------
+@close-color:                 #000;
+@close-font-weight:           bold;
+@close-text-shadow:           0 1px 0 #fff;
+
+
+// Code
+// ------------------------
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;
+
+@pre-bg:                      #f5f5f5;
+@pre-color:                   @gray-dark;
+@pre-border-color:            #ccc;
+@pre-scrollable-max-height:   340px;
+
+// Type
+// ------------------------
+@text-muted:                  @gray-light;
+@abbr-border-color:           @gray-light;
+@headings-small-color:        @gray-light;
+@blockquote-small-color:      @gray-light;
+@blockquote-border-color:     @gray-lighter;
+@page-header-border-color:    @gray-lighter;
+
+// Miscellaneous
+// -------------------------
+
+// Hr border color
+@hr-border:                   @gray-lighter;
+
+// Horizontal forms & lists
+@component-offset-horizontal: 180px;
+
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1140px + @grid-gutter-width));
+@container-lg:                 @container-large-desktop;
+
+
+
+// Font Awesome Variables
+// --------------------------
+
+@FontAwesomePath:    "../fonts";
+@FontAwesomeVersion: "3.2.1";
+@borderColor:        #eee;
+@iconMuted:          #eee;
+@iconLight:          #fff;
+@iconDark:           @text-color;
+@icons-li-width:     30/14em;
+
+  @glass: "\f000";
+
+  @music: "\f001";
+
+  @search: "\f002";
+
+  @envelope-alt: "\f003";
+
+  @heart: "\f004";
+
+  @star: "\f005";
+
+  @star-empty: "\f006";
+
+  @user: "\f007";
+
+  @film: "\f008";
+
+  @th-large: "\f009";
+
+  @th: "\f00a";
+
+  @th-list: "\f00b";
+
+  @ok: "\f00c";
+
+  @remove: "\f00d";
+
+  @zoom-in: "\f00e";
+
+  @zoom-out: "\f010";
+
+  @off: "\f011";
+
+  @signal: "\f012";
+
+  @cog: "\f013";
+
+  @trash: "\f014";
+
+  @home: "\f015";
+
+  @file-alt: "\f016";
+
+  @time: "\f017";
+
+  @road: "\f018";
+
+  @download-alt: "\f019";
+
+  @download: "\f01a";
+
+  @upload: "\f01b";
+
+  @inbox: "\f01c";
+
+  @play-circle: "\f01d";
+
+  @repeat: "\f01e";
+
+  @refresh: "\f021";
+
+  @list-alt: "\f022";
+
+  @lock: "\f023";
+
+  @flag: "\f024";
+
+  @headphones: "\f025";
+
+  @volume-off: "\f026";
+
+  @volume-down: "\f027";
+
+  @volume-up: "\f028";
+
+  @qrcode: "\f029";
+
+  @barcode: "\f02a";
+
+  @tag: "\f02b";
+
+  @tags: "\f02c";
+
+  @book: "\f02d";
+
+  @bookmark: "\f02e";
+
+  @print: "\f02f";
+
+  @camera: "\f030";
+
+  @font: "\f031";
+
+  @bold: "\f032";
+
+  @italic: "\f033";
+
+  @text-height: "\f034";
+
+  @text-width: "\f035";
+
+  @align-left: "\f036";
+
+  @align-center: "\f037";
+
+  @align-right: "\f038";
+
+  @align-justify: "\f039";
+
+  @list: "\f03a";
+
+  @indent-left: "\f03b";
+
+  @indent-right: "\f03c";
+
+  @facetime-video: "\f03d";
+
+  @picture: "\f03e";
+
+  @pencil: "\f040";
+
+  @map-marker: "\f041";
+
+  @adjust: "\f042";
+
+  @tint: "\f043";
+
+  @edit: "\f044";
+
+  @share: "\f045";
+
+  @check: "\f046";
+
+  @move: "\f047";
+
+  @step-backward: "\f048";
+
+  @fast-backward: "\f049";
+
+  @backward: "\f04a";
+
+  @play: "\f04b";
+
+  @pause: "\f04c";
+
+  @stop: "\f04d";
+
+  @forward: "\f04e";
+
+  @fast-forward: "\f050";
+
+  @step-forward: "\f051";
+
+  @eject: "\f052";
+
+  @chevron-left: "\f053";
+
+  @chevron-right: "\f054";
+
+  @plus-sign: "\f055";
+
+  @minus-sign: "\f056";
+
+  @remove-sign: "\f057";
+
+  @ok-sign: "\f058";
+
+  @question-sign: "\f059";
+
+  @info-sign: "\f05a";
+
+  @screenshot: "\f05b";
+
+  @remove-circle: "\f05c";
+
+  @ok-circle: "\f05d";
+
+  @ban-circle: "\f05e";
+
+  @arrow-left: "\f060";
+
+  @arrow-right: "\f061";
+
+  @arrow-up: "\f062";
+
+  @arrow-down: "\f063";
+
+  @share-alt: "\f064";
+
+  @resize-full: "\f065";
+
+  @resize-small: "\f066";
+
+  @plus: "\f067";
+
+  @minus: "\f068";
+
+  @asterisk: "\f069";
+
+  @exclamation-sign: "\f06a";
+
+  @gift: "\f06b";
+
+  @leaf: "\f06c";
+
+  @fire: "\f06d";
+
+  @eye-open: "\f06e";
+
+  @eye-close: "\f070";
+
+  @warning-sign: "\f071";
+
+  @plane: "\f072";
+
+  @calendar: "\f073";
+
+  @random: "\f074";
+
+  @comment: "\f075";
+
+  @magnet: "\f076";
+
+  @chevron-up: "\f077";
+
+  @chevron-down: "\f078";
+
+  @retweet: "\f079";
+
+  @shopping-cart: "\f07a";
+
+  @folder-close: "\f07b";
+
+  @folder-open: "\f07c";
+
+  @resize-vertical: "\f07d";
+
+  @resize-horizontal: "\f07e";
+
+  @bar-chart: "\f080";
+
+  @twitter-sign: "\f081";
+
+  @facebook-sign: "\f082";
+
+  @camera-retro: "\f083";
+
+  @key: "\f084";
+
+  @cogs: "\f085";
+
+  @comments: "\f086";
+
+  @thumbs-up-alt: "\f087";
+
+  @thumbs-down-alt: "\f088";
+
+  @star-half: "\f089";
+
+  @heart-empty: "\f08a";
+
+  @signout: "\f08b";
+
+  @linkedin-sign: "\f08c";
+
+  @pushpin: "\f08d";
+
+  @external-link: "\f08e";
+
+  @signin: "\f090";
+
+  @trophy: "\f091";
+
+  @github-sign: "\f092";
+
+  @upload-alt: "\f093";
+
+  @lemon: "\f094";
+
+  @phone: "\f095";
+
+  @check-empty: "\f096";
+
+  @bookmark-empty: "\f097";
+
+  @phone-sign: "\f098";
+
+  @twitter: "\f099";
+
+  @facebook: "\f09a";
+
+  @github: "\f09b";
+
+  @unlock: "\f09c";
+
+  @credit-card: "\f09d";
+
+  @rss: "\f09e";
+
+  @hdd: "\f0a0";
+
+  @bullhorn: "\f0a1";
+
+  @bell: "\f0a2";
+
+  @certificate: "\f0a3";
+
+  @hand-right: "\f0a4";
+
+  @hand-left: "\f0a5";
+
+  @hand-up: "\f0a6";
+
+  @hand-down: "\f0a7";
+
+  @circle-arrow-left: "\f0a8";
+
+  @circle-arrow-right: "\f0a9";
+
+  @circle-arrow-up: "\f0aa";
+
+  @circle-arrow-down: "\f0ab";
+
+  @globe: "\f0ac";
+
+  @wrench: "\f0ad";
+
+  @tasks: "\f0ae";
+
+  @filter: "\f0b0";
+
+  @briefcase: "\f0b1";
+
+  @fullscreen: "\f0b2";
+
+  @group: "\f0c0";
+
+  @link: "\f0c1";
+
+  @cloud: "\f0c2";
+
+  @beaker: "\f0c3";
+
+  @cut: "\f0c4";
+
+  @copy: "\f0c5";
+
+  @paper-clip: "\f0c6";
+
+  @save: "\f0c7";
+
+  @sign-blank: "\f0c8";
+
+  @reorder: "\f0c9";
+
+  @list-ul: "\f0ca";
+
+  @list-ol: "\f0cb";
+
+  @strikethrough: "\f0cc";
+
+  @underline: "\f0cd";
+
+  @table: "\f0ce";
+
+  @magic: "\f0d0";
+
+  @truck: "\f0d1";
+
+  @pinterest: "\f0d2";
+
+  @pinterest-sign: "\f0d3";
+
+  @google-plus-sign: "\f0d4";
+
+  @google-plus: "\f0d5";
+
+  @money: "\f0d6";
+
+  @caret-down: "\f0d7";
+
+  @caret-up: "\f0d8";
+
+  @caret-left: "\f0d9";
+
+  @caret-right: "\f0da";
+
+  @columns: "\f0db";
+
+  @sort: "\f0dc";
+
+  @sort-down: "\f0dd";
+
+  @sort-up: "\f0de";
+
+  @envelope: "\f0e0";
+
+  @linkedin: "\f0e1";
+
+  @undo: "\f0e2";
+
+  @legal: "\f0e3";
+
+  @dashboard: "\f0e4";
+
+  @comment-alt: "\f0e5";
+
+  @comments-alt: "\f0e6";
+
+  @bolt: "\f0e7";
+
+  @sitemap: "\f0e8";
+
+  @umbrella: "\f0e9";
+
+  @paste: "\f0ea";
+
+  @lightbulb: "\f0eb";
+
+  @exchange: "\f0ec";
+
+  @cloud-download: "\f0ed";
+
+  @cloud-upload: "\f0ee";
+
+  @user-md: "\f0f0";
+
+  @stethoscope: "\f0f1";
+
+  @suitcase: "\f0f2";
+
+  @bell-alt: "\f0f3";
+
+  @coffee: "\f0f4";
+
+  @food: "\f0f5";
+
+  @file-text-alt: "\f0f6";
+
+  @building: "\f0f7";
+
+  @hospital: "\f0f8";
+
+  @ambulance: "\f0f9";
+
+  @medkit: "\f0fa";
+
+  @fighter-jet: "\f0fb";
+
+  @beer: "\f0fc";
+
+  @h-sign: "\f0fd";
+
+  @plus-sign-alt: "\f0fe";
+
+  @double-angle-left: "\f100";
+
+  @double-angle-right: "\f101";
+
+  @double-angle-up: "\f102";
+
+  @double-angle-down: "\f103";
+
+  @angle-left: "\f104";
+
+  @angle-right: "\f105";
+
+  @angle-up: "\f106";
+
+  @angle-down: "\f107";
+
+  @desktop: "\f108";
+
+  @laptop: "\f109";
+
+  @tablet: "\f10a";
+
+  @mobile-phone: "\f10b";
+
+  @circle-blank: "\f10c";
+
+  @quote-left: "\f10d";
+
+  @quote-right: "\f10e";
+
+  @spinner: "\f110";
+
+  @circle: "\f111";
+
+  @reply: "\f112";
+
+  @github-alt: "\f113";
+
+  @folder-close-alt: "\f114";
+
+  @folder-open-alt: "\f115";
+
+  @expand-alt: "\f116";
+
+  @collapse-alt: "\f117";
+
+  @smile: "\f118";
+
+  @frown: "\f119";
+
+  @meh: "\f11a";
+
+  @gamepad: "\f11b";
+
+  @keyboard: "\f11c";
+
+  @flag-alt: "\f11d";
+
+  @flag-checkered: "\f11e";
+
+  @terminal: "\f120";
+
+  @code: "\f121";
+
+  @reply-all: "\f122";
+
+  @mail-reply-all: "\f122";
+
+  @star-half-empty: "\f123";
+
+  @location-arrow: "\f124";
+
+  @crop: "\f125";
+
+  @code-fork: "\f126";
+
+  @unlink: "\f127";
+
+  @question: "\f128";
+
+  @info: "\f129";
+
+  @exclamation: "\f12a";
+
+  @superscript: "\f12b";
+
+  @subscript: "\f12c";
+
+  @eraser: "\f12d";
+
+  @puzzle-piece: "\f12e";
+
+  @microphone: "\f130";
+
+  @microphone-off: "\f131";
+
+  @shield: "\f132";
+
+  @calendar-empty: "\f133";
+
+  @fire-extinguisher: "\f134";
+
+  @rocket: "\f135";
+
+  @maxcdn: "\f136";
+
+  @chevron-sign-left: "\f137";
+
+  @chevron-sign-right: "\f138";
+
+  @chevron-sign-up: "\f139";
+
+  @chevron-sign-down: "\f13a";
+
+  @html5: "\f13b";
+
+  @css3: "\f13c";
+
+  @anchor: "\f13d";
+
+  @unlock-alt: "\f13e";
+
+  @bullseye: "\f140";
+
+  @ellipsis-horizontal: "\f141";
+
+  @ellipsis-vertical: "\f142";
+
+  @rss-sign: "\f143";
+
+  @play-sign: "\f144";
+
+  @ticket: "\f145";
+
+  @minus-sign-alt: "\f146";
+
+  @check-minus: "\f147";
+
+  @level-up: "\f148";
+
+  @level-down: "\f149";
+
+  @check-sign: "\f14a";
+
+  @edit-sign: "\f14b";
+
+  @external-link-sign: "\f14c";
+
+  @share-sign: "\f14d";
+
+  @compass: "\f14e";
+
+  @collapse: "\f150";
+
+  @collapse-top: "\f151";
+
+  @expand: "\f152";
+
+  @eur: "\f153";
+
+  @gbp: "\f154";
+
+  @usd: "\f155";
+
+  @inr: "\f156";
+
+  @jpy: "\f157";
+
+  @cny: "\f158";
+
+  @krw: "\f159";
+
+  @btc: "\f15a";
+
+  @file: "\f15b";
+
+  @file-text: "\f15c";
+
+  @sort-by-alphabet: "\f15d";
+
+  @sort-by-alphabet-alt: "\f15e";
+
+  @sort-by-attributes: "\f160";
+
+  @sort-by-attributes-alt: "\f161";
+
+  @sort-by-order: "\f162";
+
+  @sort-by-order-alt: "\f163";
+
+  @thumbs-up: "\f164";
+
+  @thumbs-down: "\f165";
+
+  @youtube-sign: "\f166";
+
+  @youtube: "\f167";
+
+  @xing: "\f168";
+
+  @xing-sign: "\f169";
+
+  @youtube-play: "\f16a";
+
+  @dropbox: "\f16b";
+
+  @stackexchange: "\f16c";
+
+  @instagram: "\f16d";
+
+  @flickr: "\f16e";
+
+  @adn: "\f170";
+
+  @bitbucket: "\f171";
+
+  @bitbucket-sign: "\f172";
+
+  @tumblr: "\f173";
+
+  @tumblr-sign: "\f174";
+
+  @long-arrow-down: "\f175";
+
+  @long-arrow-up: "\f176";
+
+  @long-arrow-left: "\f177";
+
+  @long-arrow-right: "\f178";
+
+  @apple: "\f179";
+
+  @windows: "\f17a";
+
+  @android: "\f17b";
+
+  @linux: "\f17c";
+
+  @dribbble: "\f17d";
+
+  @skype: "\f17e";
+
+  @foursquare: "\f180";
+
+  @trello: "\f181";
+
+  @female: "\f182";
+
+  @male: "\f183";
+
+  @gittip: "\f184";
+
+  @sun: "\f185";
+
+  @moon: "\f186";
+
+  @archive: "\f187";
+
+  @bug: "\f188";
+
+  @vk: "\f189";
+
+  @weibo: "\f18a";
+
+  @renren: "\f18b";
