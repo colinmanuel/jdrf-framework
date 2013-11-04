@@ -57,3 +57,43 @@
 	.make-sm-column(4);
 	.make-sm-column-offset(1);
 }
+
+.intro--landing-page {
+	.make-sm-column(8);
+	.make-sm-column-offset(2);
+	text-align: center;
+	
+}
+
+.page-title--landing-page {
+	text-align: center;
+	margin: 1em 0 1em;
+}
+
+@media (min-width: 62em) {
+	.hero-overlay {
+		background-color: @body-bg;
+		margin-top: -6em;
+		position: relative;
+		z-index: 15;
+	}
+	
+	.page-title--landing-page {
+		margin-top: .75em;
+	}
+}
+
+.content__main--landing-page {
+	.make-sm-column(12);
+	padding: @padding-large-horizontal;
+	margin-bottom: 2em;
+
+	@media (min-width: @screen-sm) {
+		background-color: #fff;
+		padding: (@padding-large-horizontal * 2);
+		border-radius: @border-radius-small;
+		border: @gray-lighter solid 1px;
+	}
+}
+
+
