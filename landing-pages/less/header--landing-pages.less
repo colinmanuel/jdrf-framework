@@ -11,25 +11,32 @@
 	}
 }
 
-.logo--team-jdrf {
+.logo--jdrf {
 	display: block;
-	width: 148px;
-	height: 18px;
+	width: 69px;
+	height: 24px;
 	margin-top: 0;
-	background: url("../images/logo-teamjdrf.svg") no-repeat;
+	background: url("../../_global/images/JDRF_2C_NameOnly_hex.svg") no-repeat;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15px;
+	margin-top: 12px;
 	.hide-text;
 	
 	@media (min-width: @screen-sm) {
+		width: 176px;
+		height: 44px;
+		background: url("../../_global/images/JDRF_2C_hex.svg") no-repeat;
 		margin-left: 0;
-		margin-top: 23px;
+		margin-top: 10px;
 	}
 }
 
 .no-svg .logo--team-jdrf {
-	background: url("../images/logo-teamjdrf.png") no-repeat;
+	background: url("../../_global/images/JDRF_2C_NameOnly_hex.png") no-repeat;
+	
+	@media (min-width: @screen-sm) {
+		background: url("../../_global/images/JDRF_2C_hex.png") no-repeat;
+	}
 }
 
 .site-menu__toggle {
@@ -162,10 +169,10 @@
 	
 	.site-header__links--right .donate {
 		.btn;
+		position: relative;
 		border: @blue solid 1px;
 		border-radius: @border-radius-base;
-		padding: padding-base-vertical padding-base-horizontal;
-		position: relative;
+		padding: padding-base-vertical padding-large-horizontal;
 		-webkit-transition: all 0.5s;
 			 -moz-transition: all 0.5s;
 			 			transition: all 0.5s;

@@ -1,7 +1,7 @@
 .page {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   left: 0;
   .transition(all .3s);
 }
@@ -59,8 +59,8 @@
 }
 
 .intro--landing-page {
-	.make-sm-column(8);
-	.make-sm-column-offset(2);
+	.make-sm-column(10);
+	.make-sm-column-offset(1);
 	text-align: center;
 	
 }
@@ -68,19 +68,6 @@
 .page-title--landing-page {
 	text-align: center;
 	margin: 1em 0 1em;
-}
-
-@media (min-width: 62em) {
-	.hero-overlay {
-		background-color: @body-bg;
-		margin-top: -6em;
-		position: relative;
-		z-index: 15;
-	}
-	
-	.page-title--landing-page {
-		margin-top: .75em;
-	}
 }
 
 .content__main--landing-page {

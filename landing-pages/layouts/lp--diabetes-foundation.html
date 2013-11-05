@@ -12,8 +12,18 @@
   
   <title>Team JDRF Challenge / Team JDRF to Cure Diabetes</title>
   
-  <!-- @include ../includes/head-links--landing-pages.html -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6575652/749262/css/fonts.css" />
+<link href="../css/index--landing-pages.css" rel="stylesheet">
   
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<link href="../css/jdrf-ltie9.css" rel="stylesheet">
+	<script src="//jdrf.org/dev/jdrf-framework/bootstrap/assets/js/html5shiv.js"></script>
+  <script src="//jdrf.org/dev/jdrf-framework/bootstrap/assets/js/respond.min.js"></script>
+  <script src="//jdrf.org/dev/jdrf-framework/js/selectivizr-min.js"></script>
+<![endif]-->
+  
+<script src="//jdrf.org/dev/jdrf-framework/js/modernizr-2.6.2.min.js"></script>  
 </head>
 
 <body>
@@ -23,10 +33,43 @@
  
 <div class="page" id="page">  
   
-  <!-- @include ../includes/header--landing-pages.html -->
-  
-  <!-- @include ../includes/offcanvas-menu--landing-pages.html -->
+  <header id="top" role="banner" class="site-header">
+	<span class="sr-only">Toggle Site Navigation</span>
+	<a class="site-menu__toggle" data-toggle="offcanvas"><span class="icon-reorder"  aria-hidden="true"></span></a>
+	
+	<div class="site-header__container">
+		<div class="site-header__row">
+			<div class="site-header__logo">
+				<a class="logo--jdrf" href="http://jdrf.org">JDRF</a>
+			</div>
+			<nav class="site-header__links">
+			  <span class="site-header__links--left">
+			  	<!-- <a href="#">Join an Event</a>
+			  	<a href="#">Start an Event</a>
+			  	<a href="#">Start a Campaign</a> -->
+			  </span>
+			  <span class="site-header__links--right">
+			  	<a href="#" class="donate">Donate</a>
+			  	<!-- <a href="#" class="login">Log in</a> -->
+			  </span>
+			</nav>
+		</div>
+	</div>
+</header>  
+  <nav id="full-site-menu" class="site-menu" role="navigation">
+	
+	<a data-toggle="offcanvas"><span class="icon-remove"></span></a>
 
+  <ul class="site-menu__list">
+  	<li class="site-menu__list--item"><a href="//jdrf.org/get-involved">Get Involved</a></li>
+  	<li class="site-menu__list--item"><a href="//jdrf.org/get-support">Get Support</a></li>
+  	<li class="site-menu__list--item"><a href="//jdrf.org/research">Research</a></li>
+  	<li class="site-menu__list--item"><a href="//advocacy.jdrf.org/">Advocacy</a></li>
+  	<li class="site-menu__list--item"><a href="//jdrf.org/countdown">News</a></li>
+  	<li class="site-menu__list--item"><a href="//jdrf.org/about-jdrf">About JDRF</a></li>
+  </ul>
+  
+</nav>
 	<div class="page__container">
 	
 		<div class="hero__image">
@@ -97,8 +140,16 @@
 	
 	</div> <!-- /page__container -->
   
-  <!-- @include ../includes/footer--landing-pages.html -->
-  
+  <footer>
+	<div class="footer-links--bottom-bar__wrap">
+		<div class="footer-links--bottom-bar">
+			<span><a href="http://jdrf.org/"><i class="icon-arrow-left"></i>&nbsp;&nbsp;JDRF.org</a></span>
+			<span><a href="#">Privacy Policy</a></span>
+			<span>&copy; JDRF 2013</span>
+		</div>
+	</div>
+
+</footer>  
 </div> <!-- /page -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

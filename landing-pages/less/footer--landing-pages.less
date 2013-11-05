@@ -4,69 +4,8 @@ footer {
 	border-top: darken(@body-bg, 2%) solid 1px;
 }
 
-.footer-brand {
-	background-color: #fff;
-	padding: (@padding-large-vertical * 3) @grid-gutter-width @padding-large-vertical @grid-gutter-width;
-	border-bottom: #e2e2e2 solid 1px;
-	border-top: #e2e2e2 solid 1px;
-}
-
-.footer-brand__container {
-	position: relative;
-	max-width: percentage(6 / @grid-columns);
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.footer-brand__logo--teamjdrf {
-	width: 100%;
-	margin-bottom: 1em;
-}
-
-
-.footer-brand__logo--jdrf {
-	width: 150px;
-	margin-bottom: 1em;
-}
-
-.site-menu--footer__wrap {
-	background-color: darken(@body-bg, 3%);
-}
-
-.site-menu--footer {
-	font-size: @font-size-small;
-	position: relative;
-	max-width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 1em;
-	
-	@media (min-width: @screen-xs) {
-		text-align: justify;
-	}
-}
-
-.site-menu--footer ul {
-	vertical-align: top;
-	list-style: none;
-	.clearfix();
-	
-	
-	@media (min-width: @screen-xs) {
-		display: inline-block;
-	}
-}
-
-// force a line break to make text-align: justify to work
-.site-menu--footer:after {
-	content: '';
-	display: inline-block;
-	width: 100%;
-}
-
 .footer-links--bottom-bar__wrap {
-	background-color: @green;
+	background-color: @blue;
 }
 
 .footer-links--bottom-bar {
@@ -95,26 +34,21 @@ footer {
 	width: 50%;
 	float: left;
 	padding: @padding-base-vertical 0;
-	border-top: darken(@green, 5%) solid 1px;
+	border-top: darken(@blue, 5%) solid 1px;
 	
 	@media (min-width: @screen-sm) {
     width: 15%;
     border-top: none;
   }
-  
-  @media (min-width: @screen-md) {
-    width: 10%;
-  }
-  
 }
 
 .footer-links--bottom-bar span:nth-child(odd) {
-	border-right: darken(@green, 5%) solid 1px;
+	border-right: darken(@blue, 5%) solid 1px;
 	
 }
 
 @media (min-width: @screen-sm) {
 	.footer-links--bottom-bar span:nth-child(even) {
-    border-right: darken(@green, 5%) solid 1px;
+    border-right: darken(@blue, 5%) solid 1px;
   }
 }  	
