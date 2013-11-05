@@ -31,7 +31,7 @@
 	}
 }
 
-.no-svg .logo--team-jdrf {
+.no-svg .logo--jdrf {
 	background: url("../../_global/images/JDRF_2C_NameOnly_hex.png") no-repeat;
 	
 	@media (min-width: @screen-sm) {
@@ -80,9 +80,13 @@
   text-decoration: none;
 }
 
-.site-header__links {
-	.hidden-xs;
-}
+
+.site-header__links--right .donate {
+		.btn;
+		position: absolute;
+		top: 7px;
+		right: 15px;
+	}
 
 @media (min-width: @screen-sm) {
 
@@ -170,6 +174,8 @@
 	.site-header__links--right .donate {
 		.btn;
 		position: relative;
+		top: auto;
+		right: auto;
 		border: @blue solid 1px;
 		border-radius: @border-radius-base;
 		padding: padding-base-vertical padding-large-horizontal;
