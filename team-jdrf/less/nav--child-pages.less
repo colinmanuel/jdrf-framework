@@ -1,14 +1,6 @@
-.nav-tabs--main-content {
-	.make-sm-column(7);
-}
-
 // Child page navigation for sidebars
 // -------------------------
-.nav--child-pages ul {
-	margin-bottom: 2em;
-}
-
-.nav--child-pages {
+.nav-pills {
   > li {
 
     // Links rendered as pills
@@ -24,8 +16,8 @@
       &,
       &:hover,
       &:focus {
-        color: @gray-dark;
-        background-color: @gray-lighter;
+        color: @nav-pills-active-link-hover-color;
+        background-color: @gray-light;
       }
     }
   }

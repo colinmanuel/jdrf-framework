@@ -4720,6 +4720,21 @@ textarea.input-group-sm > .input-group-btn > .btn {
     width: 58.333333333333336%;
   }
 }
+.nav--child-pages ul {
+  margin-bottom: 2em;
+}
+.nav--child-pages > li > a {
+  border-radius: 2px;
+}
+.nav--child-pages > li + li {
+  margin-left: 2px;
+}
+.nav--child-pages > li.active > a,
+.nav--child-pages > li.active > a:hover,
+.nav--child-pages > li.active > a:focus {
+  color: #333333;
+  background-color: #eeeeee;
+}
 .navbar {
   position: relative;
   z-index: 1000;
